@@ -1,6 +1,6 @@
 # Helper to find and configure MPI for VTK targets. Centralize the logic for
 # any necessary compiler definitions, linking etc.
-find_package(MPI REQUIRED)
+find_package(MPI)
 mark_as_advanced(MPI_LIBRARY MPI_EXTRA_LIBRARY)
 include_directories(${MPI_C_INCLUDE_PATH})
 # Needed for MPICH 2
