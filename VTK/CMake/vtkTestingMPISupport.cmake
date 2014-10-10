@@ -28,7 +28,7 @@ if(MPIEXEC)
   set(VTK_MPI_MAX_NUMPROCS ${MPIEXEC_MAX_NUMPROCS} CACHE STRING
     "Maximum number of processors available to run parallel applications. (see ${CMAKE_CURRENT_SOURCE_DIR}/CMakeLists.txt for more info.)" FORCE)
 else()
-  message(FATAL_ERROR "MPIEXEC was empty.")
+  message(WARNING "MPIEXEC was empty.")
 endif()
 
 mark_as_advanced(
